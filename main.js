@@ -324,32 +324,3 @@ function checker() {
   }
 }
 
-/*
-this is how to make an object that you can iterate on it 
-you should implement the [symbol.iterator] function with the next method
-*/
-// let ob = {
-//   name: "Sakher",
-//   age: 26,
-//   country: "Jordan",
-//   skill1: "HTML",
-//   skill2: "CSS",
-//   skill3: "JavaScript",
-//   skill4: "Python",
-//   [Symbol.iterator]() {
-//     let ind = 0;
-//     let K = Object.keys(this);
-//     return {
-//       next() {
-//         return {
-//           value: ob[K[ind]],
-//           done: ind++ === K.length,
-//         };
-//       },
-//     };
-//   },
-// };
-
-// for (let it of ob) {
-//   console.log(it);
-// }
